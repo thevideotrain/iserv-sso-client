@@ -79,4 +79,4 @@ setInterval(async () => {
 }, 55 * 60 * 1000)
 ```
 
-[Docs](https://github.com/thevideotrain/iserv-sso-client/)
+[Docs](https://github.com/thevideotrain/iserv-sso-client/wiki//)
