@@ -1,0 +1,32 @@
+{
+  "name": "iserv-sso-client",
+  "version": "1.0.0",
+  "description": "An inofficial client for IServ Oauth2 / Single-Sign-On / OpenID Connect",
+  "homepage": "https://github.com/thevideotrain/iserv-sso-client/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thevideotrain/iserv-sso-client.git"
+  },
+  "keywords": [
+    "iserv",
+    "sso",
+    "single-sign-on",
+    "openid",
+    "openid-connect",
+    "oauth2",
+    "iserv-sso"
+  ],
+  "author": "TheVideoTrain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thevideotrain/iserv-sso-client/issues"
+  },
+  "homepage": "https://github.com/thevideotrain/iserv-sso-client#readme",
+  "dependencies": {
+    "openid-client": "^5.1.4"
+  }
+}
