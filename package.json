@@ -1,8 +1,8 @@
 {
   "name": "iserv-sso-client",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An inofficial client for IServ Oauth2 / Single-Sign-On / OpenID Connect",
-  "homepage": "https://github.com/thevideotrain/iserv-sso-client/",
+  "homepage": "https://github.com/thevideotrain/iserv-sso-client#readme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,7 +25,6 @@
   "bugs": {
     "url": "https://github.com/thevideotrain/iserv-sso-client/issues"
   },
-  "homepage": "https://github.com/thevideotrain/iserv-sso-client#readme",
   "dependencies": {
     "openid-client": "^5.1.4"
   }
