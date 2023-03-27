@@ -26,6 +26,6 @@
     "url": "https://github.com/thevideotrain/iserv-sso-client/issues"
   },
   "dependencies": {
-    "openid-client": "^5.1.4"
+    "openid-client": "^5.4.0"
   }
 }
