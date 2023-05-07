@@ -1,0 +1,44 @@
+name: Life Machine
+
+on:
+  pull_request:
+    branches: [ main, master ]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  publish:
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    # Installs npm packages
+    - run: npm ci
+    # Runs Life Machine
+    - run: npx -y life-machine ?workflow ${{ secrets.LM_NPM_TOKEN }} ${{ secrets.GITHUB_TOKEN }} ${{ secrets.LM_DISCORD_TOKEN }}
+      if: ${{ success() }}
+    # Merge PR
+    - name: Dependabot metadata
+      id: metadata
+      uses: dependabot/fetch-metadata@v1
+      with:
+        github-token: "${{ secrets.GITHUB_TOKEN }}"
+      if: ${{ success() }}
+    - name: Approve a PR
+      run: gh pr review --approve "$PR_URL"
+      env:
+        PR_URL: ${{ github.event.pull_request.html_url }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      if: ${{ success() }}
