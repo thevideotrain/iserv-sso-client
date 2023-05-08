@@ -1,31 +1,35 @@
 {
-  "name": "iserv-sso-client",
-  "version": "1.1.1",
-  "description": "An inofficial client for IServ Oauth2 / Single-Sign-On / OpenID Connect",
-  "homepage": "https://github.com/thevideotrain/iserv-sso-client#readme",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thevideotrain/iserv-sso-client.git"
-  },
-  "keywords": [
-    "iserv",
-    "sso",
-    "single-sign-on",
-    "openid",
-    "openid-connect",
-    "oauth2",
-    "iserv-sso"
-  ],
-  "author": "TheVideoTrain",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/thevideotrain/iserv-sso-client/issues"
-  },
-  "dependencies": {
-    "openid-client": "^5.4.0"
-  }
+    "name": "iserv-sso-client",
+    "version": "1.1.1",
+    "description": "An inofficial client for IServ Oauth2 / Single-Sign-On / OpenID Connect",
+    "homepage": "https://github.com/thevideotrain/iserv-sso-client#readme",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "life-machine": "life-machine $*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thevideotrain/iserv-sso-client.git"
+    },
+    "keywords": [
+        "iserv",
+        "sso",
+        "single-sign-on",
+        "openid",
+        "openid-connect",
+        "oauth2",
+        "iserv-sso"
+    ],
+    "author": "TheVideoTrain",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/thevideotrain/iserv-sso-client/issues"
+    },
+    "dependencies": {
+        "openid-client": "^5.4.0"
+    },
+    "devDependencies": {
+        "life-machine": "^2.0.11"
+    }
 }

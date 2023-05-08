@@ -7,5 +7,7 @@
         "onPublish": true,
         "onAttentionNeeded": true
     },
-    "versionType": "patch"
+    "versionType": "patch",
+    "registry": "registry.npmjs.org",
+    "rebaseTries": 5
 }
